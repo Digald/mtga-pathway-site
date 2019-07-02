@@ -29,9 +29,9 @@ class Navbar extends Component {
     }
     return (
       <div className="navbar">
-        <div className="navbar__name">
+        <h1 className="navbar__name">
           mtga <span className="navbar__name__span">pathway</span>
-        </div>
+        </h1>
         {screenWidth > 768 ? (
           <ul className="navbar__links">
             <Link to="#">
