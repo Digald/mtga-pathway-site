@@ -1,0 +1,7 @@
+.apppreview {
+    position: absolute;
+    top: 60%;
+    border: 2px solid cyan;
+    height: 1000px;
+    width: 1000px;
+}

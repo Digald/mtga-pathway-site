@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./PageBody.css";
 import PlatformButtons from '../PlatformButtons/PlatformButtons';
+import AppPreview from '../AppPreview/AppPreview';
 import testvid from './testvid.mp4'
 
 class PageBody extends Component {
@@ -14,7 +15,7 @@ class PageBody extends Component {
           <h2 className="pagebody__heading">The smart way to make the most out of your card collection</h2>
           <p className="pagebody__subheading">*For desktop platforms only</p>
           <PlatformButtons/>
-          {/* app preview */}
+          <AppPreview/>
       </div>
     );
   }
