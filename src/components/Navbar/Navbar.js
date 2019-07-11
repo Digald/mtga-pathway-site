@@ -21,6 +21,7 @@ class Navbar extends Component {
 
   render() {
     const { screenWidth, menuSVG } = this.state;
+    console.log(screenWidth);
     let svgUrl;
     if (!menuSVG) {
       svgUrl = "navbar__hamburger__open";

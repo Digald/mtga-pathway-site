@@ -1,0 +1,15 @@
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 80px auto auto auto 200px;
+  /* justify-items: stretch; */
+} 
+
+.next {
+    grid-column: 1;
+    grid-row: 4 / 6; 
+    width: 100%;
+    background-color: white;
+  }
+  

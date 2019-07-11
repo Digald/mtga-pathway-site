@@ -1,7 +1,6 @@
 .apppreview {
-    position: absolute;
-    top: 60%;
-    border: 2px solid cyan;
-    height: 1000px;
-    width: 1000px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  grid-column: 1;
+  grid-row: 3 / 5; 
+  z-index: 1;
 }

@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import PageBody from "./components/PageBody/PageBody";
+import AppPreview from './components/AppPreview/AppPreview';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <Navbar />
         <PageBody />
+        <AppPreview/>
         <div className="next"></div>
       </div>
     </BrowserRouter>
