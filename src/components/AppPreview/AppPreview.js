@@ -4,7 +4,11 @@ import preview from "./mtga_preview.png";
 
 class AppPreview extends Component {
   render() {
-    return <img className="apppreview" src={preview} alt="App" />;
+    return (
+      <div className="apppreview">
+        <img src={preview} alt="App" />
+      </div>
+    );
   }
 }
 

@@ -1,12 +1,15 @@
 .apppreview {
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  width: 100%;
   grid-column: 1;
   grid-row: 3 / 5; 
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 796px) {
-  .apppreview {
+  .apppreview img {
     width: 100%;
   }
 }
