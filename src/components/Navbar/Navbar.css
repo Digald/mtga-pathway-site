@@ -4,6 +4,7 @@
   align-items: center;
   background-color: #1b1b3a;
   width: 100%;
+  height: 100%;
 }
 
 .navbar__name {
@@ -15,6 +16,7 @@
   color: #1b1b3a;
   font-weight: bold;
   white-space: nowrap;
+  margin: 0;
 }
 
 .navbar__name__span {
@@ -44,11 +46,13 @@
 
 .navbar__hamburger__open {
   content: url("./menu.svg");
-  transition: 0.5s;
 }
 
 .navbar__hamburger__close {
   content: url("./close_menu.svg");
+  /* position: fixed;
+  top: 0;
+  right: 0; */
 }
 
 .navbar__links li:hover {

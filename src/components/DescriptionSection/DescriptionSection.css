@@ -1,0 +1,17 @@
+.descriptionSection {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20% 50px 20%;
+}
+
+.descriptionSection__title {
+    margin: 0;
+    text-align: center;
+}
+
+.descriptionSection__section {
+    margin-top: 50px;   
+}
