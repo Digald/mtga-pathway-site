@@ -1,0 +1,8 @@
+.singleSection {
+    margin-top: 50px;   
+    display: flex;
+}
+
+.singleSection__text h3 {
+    font-size: 30px;
+}

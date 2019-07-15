@@ -1,17 +1,21 @@
 .descriptionSection {
     background-color: white;
-    color: black;
+    color: #605e5e;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 20% 50px 20%;
+    padding: 50px 20%;
 }
 
 .descriptionSection__title {
+    color: black;
+    font-size: 55px;
     margin: 0;
     text-align: center;
 }
 
-.descriptionSection__section {
-    margin-top: 50px;   
+@media only screen and (max-width: 768px) {
+    .descriptionSection {
+        padding: 50px 10%;
+    }
 }
