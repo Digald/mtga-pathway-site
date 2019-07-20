@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./DescriptionSection.css";
 import SingleSection from "../SingleSection/SingleSection";
+import cardImg from '../../assets/card1.svg';
 
 class DescriptionSection extends Component {
   render() {
@@ -12,6 +13,7 @@ class DescriptionSection extends Component {
           text="MTGA Pathway automatically imports all the cards in your collection
             and keeps updating when you get new cards through packs and events!
             It also keeps up to date with your gold, wildcards, and gems."
+          image={cardImg}
         />
         <SingleSection
           title="Competitve Decks"

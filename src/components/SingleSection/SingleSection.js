@@ -3,10 +3,16 @@ import "./SingleSection.css";
 
 class SingleSection extends Component {
   render() {
-    const { title, text } = this.props;
+    const { title, text, image } = this.props;
     return (
       <div className="singleSection">
-        <div className="singleSection__image" />
+        <div className="singleSection__image">
+          <img src={image} alt="" />
+          <img src={image} alt="" />
+          <img src={image} alt="" />
+          <img src={image} alt="" />
+          <img src={image} alt="" />
+        </div>
         <div className="singleSection__text">
           <h3>{title}</h3>
           <p>{text}</p>
