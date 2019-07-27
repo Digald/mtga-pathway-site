@@ -10,10 +10,9 @@
     font-size: 30px;
 }
 
-.singleSection__image {
-    background-color: rgb(230, 230, 230);
-    border-radius: 20px;
-    --width: 300px;
-    width: var(--width); 
-    height: calc(var(--width) * 3 / 5);
+@media only screen and (max-width: 768px) {
+    .singleSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
 }

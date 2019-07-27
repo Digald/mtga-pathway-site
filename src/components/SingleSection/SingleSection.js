@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 import "./SingleSection.css";
+import RenderIcons from '../RenderIcons/RenderIcons';
 
 class SingleSection extends Component {
   render() {
     const { title, text, image } = this.props;
+
     return (
       <div className="singleSection">
-        <div className="singleSection__image">
-          <img src={image} alt="" />
-          <img src={image} alt="" />
-          <img src={image} alt="" />
-          <img src={image} alt="" />
-          <img src={image} alt="" />
-        </div>
+        <RenderIcons image={image}/>
         <div className="singleSection__text">
           <h3>{title}</h3>
           <p>{text}</p>

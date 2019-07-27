@@ -1,0 +1,9 @@
+.DisplayIcon {
+    justify-self: center;
+    width: 100%;
+}
+
+.DisplayIcon img {
+    width: 300px;
+}
+
