@@ -10,6 +10,6 @@
 
 @media only screen and (max-width: 796px) {
   .apppreview img {
-    width: 100%;
+    max-width: 100%;
   }
 }

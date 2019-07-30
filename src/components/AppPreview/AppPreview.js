@@ -6,7 +6,7 @@ class AppPreview extends Component {
   render() {
     return (
       <div className="apppreview">
-        <img src={preview} alt="App" />
+        <img src={preview} id="appPreview" alt="App" />
       </div>
     );
   }

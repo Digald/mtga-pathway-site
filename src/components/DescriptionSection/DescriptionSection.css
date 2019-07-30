@@ -2,9 +2,10 @@
     background-color: white;
     color: #605e5e;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 20%;
+    padding: 50px 10%;
 }
 
 .descriptionSection__title {
