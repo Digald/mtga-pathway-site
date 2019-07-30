@@ -1,3 +1,7 @@
+.platformbuttons-mobile {
+  margin: 5% 0;
+}
+
 .platformbuttons button {
   border: none;
   background-color: transparent;
