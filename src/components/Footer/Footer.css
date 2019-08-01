@@ -8,3 +8,8 @@
 .footer__support {
     display: flex;
 }
+
+.footer svg {
+    width: 50px;
+    fill: white;
+}
