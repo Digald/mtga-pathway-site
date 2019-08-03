@@ -1,15 +1,35 @@
 .footer {
-    background-color: #1B1B3A;
-    display: flex;
-    /* flex-wrap: wrap; */
-    padding: 1%;
+  background-color: #1b1b3a;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid #FF3562;
+}
+.footer__section {
+  padding: 1%;
+}
+
+.footer__heading {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: overline;
 }
 
 .footer__support {
-    display: flex;
+  display: flex;
+}
+
+.footer svg:first-child {
+    margin-right: 20px;
 }
 
 .footer svg {
-    width: 50px;
-    fill: white;
+  width: 50px;
+  fill: white;
+}
+
+@media only screen and (max-width: 870px) {
+  .footer {
+    flex-wrap: wrap;
+  }
 }

@@ -7,18 +7,32 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div className="footer__contact">
-          <p className="footer__contact__heading">Contact Me</p>
-          <p className="footer__contact__text">
-            If you are experience problems with the webpage, desktop app, or
-            have any concerns or suggestions about MTGA Pathway, you may find me
-            at
+        <div className="footer__section">
+          <p className="footer__heading">Contact Me</p>
+          <p className="footer__text">
+            If you experience problems with the webpage, desktop app, or have
+            any concerns or suggestions about MTGA Pathway, contact me.
           </p>
-          {parse(simpleIcons.get("github").svg)}
+          <div className="footer__links">
+            <a
+              href="https://github.com/Digald"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {parse(simpleIcons.get("github").svg)}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/markalaniz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {parse(simpleIcons.get("linkedin").svg)}
+            </a>
+          </div>
         </div>
-        <div classname="footer__support">
-          <p>I hope you enjoy the project!</p>
-          <p>
+        <div className="footer__section">
+          <p className="footer__heading">I hope you enjoy the project!</p>
+          <p className="footer__text">
             If you enjoy what I've created please consider supporting my efforts
             to continue creating tools that people with similar interests make
             good use of.
