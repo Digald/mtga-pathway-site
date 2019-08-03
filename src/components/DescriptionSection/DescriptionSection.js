@@ -5,7 +5,7 @@ import SingleSection from "../SingleSection/SingleSection";
 class DescriptionSection extends Component {
   render() {
     return (
-      <div className="descriptionSection">
+      <div className="descriptionSection" id="howitworks">
         <h2 className="descriptionSection__title">How it works</h2>
         <SingleSection
           title="Collection"

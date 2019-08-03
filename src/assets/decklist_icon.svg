@@ -1,22 +1,21 @@
-<svg width="208" height="128" viewBox="0 0 208 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="150" height="71" viewBox="0 0 150 71" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<rect x="4" width="200" height="120" rx="5" fill="white"/>
-<rect x="19" y="22" width="103" height="7" rx="3.5" fill="#F84AA7"/>
-<rect x="19" y="76" width="118" height="3" rx="1.5" fill="#F84AA7"/>
-<rect x="19" y="63" width="89" height="3" rx="1.5" fill="#F84AA7"/>
-<rect x="19" y="39" width="128" height="3" rx="1.5" fill="#F84AA7"/>
-<rect x="19" y="50" width="113" height="3" rx="1.5" fill="#F84AA7"/>
-<path d="M154.213 40L157.213 47" stroke="#693668" stroke-width="2"/>
-<line x1="157.026" y1="46.7751" x2="160.026" y2="33.7751" stroke="#693668" stroke-width="2"/>
-<path d="M115.213 64L118.213 71" stroke="#693668" stroke-width="2"/>
-<line x1="118.026" y1="70.7751" x2="121.026" y2="57.7751" stroke="#693668" stroke-width="2"/>
-<path d="M144.213 77L147.213 84" stroke="#693668" stroke-width="2"/>
-<line x1="147.026" y1="83.7751" x2="150.026" y2="70.7751" stroke="#693668" stroke-width="2"/>
-<line x1="137.707" y1="48.2929" x2="146.707" y2="57.2929" stroke="#FF3562" stroke-width="2"/>
-<line x1="137.293" y1="57.2929" x2="146.293" y2="48.2929" stroke="#FF3562" stroke-width="2"/>
+<rect x="4" width="103" height="7" rx="3.5" fill="#F84AA7"/>
+<rect x="4" y="54" width="118" height="3" rx="1.5" fill="#F84AA7"/>
+<rect x="4" y="41" width="89" height="3" rx="1.5" fill="#F84AA7"/>
+<rect x="4" y="17" width="128" height="3" rx="1.5" fill="#F84AA7"/>
+<rect x="4" y="28" width="113" height="3" rx="1.5" fill="#F84AA7"/>
+<path d="M139.213 18L142.213 25" stroke="#693668" stroke-width="2"/>
+<line x1="142.026" y1="24.7751" x2="145.026" y2="11.7751" stroke="#693668" stroke-width="2"/>
+<path d="M100.213 42L103.213 49" stroke="#693668" stroke-width="2"/>
+<line x1="103.026" y1="48.7751" x2="106.026" y2="35.7751" stroke="#693668" stroke-width="2"/>
+<path d="M129.213 55L132.213 62" stroke="#693668" stroke-width="2"/>
+<line x1="132.026" y1="61.7751" x2="135.026" y2="48.7751" stroke="#693668" stroke-width="2"/>
+<line x1="122.707" y1="26.2929" x2="131.707" y2="35.2929" stroke="#FF3562" stroke-width="2"/>
+<line x1="122.293" y1="35.2929" x2="131.293" y2="26.2929" stroke="#FF3562" stroke-width="2"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0" y="0" width="208" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0" y="0" width="150" height="70.3939" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>

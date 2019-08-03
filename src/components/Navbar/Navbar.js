@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import menu from "./menu.svg";
 import OverlayNav from "../OverlayNav/OverlayNav";
@@ -35,12 +34,12 @@ class Navbar extends Component {
         </h1>
         {screenWidth > 768 ? (
           <ul className="navbar__links">
-            <Link to="#">
+            <a href="#home">
               <li>Home</li>
-            </Link>
-            <Link to="#">
+            </a>
+            <a href="#howitworks">
               <li>How it Works</li>
-            </Link>
+            </a>
           </ul>
         ) : (
           <img

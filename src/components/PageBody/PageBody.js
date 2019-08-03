@@ -7,7 +7,7 @@ import testvid from "./testvid.mp4";
 class PageBody extends Component {
   render() {
     return (
-      <div className="pagebody">
+      <div className="pagebody" id="home">
         <video autoPlay muted loop>
           <source src={testvid} type="video/mp4" />
           Your browser does not support HTML5 video
@@ -17,7 +17,6 @@ class PageBody extends Component {
         </h2>
         <p className="pagebody__subheading">*For desktop platforms only</p>
         <PlatformButtons />
-        {/* <AppPreview /> */}
       </div>
     );
   }

@@ -1,11 +1,10 @@
 .DisplayIcon {
-    justify-self: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .DisplayIcon img {
-    width: 300px;
+  width: 300px;
 }
-

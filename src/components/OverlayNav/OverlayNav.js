@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./OverlayNav.css";
-import {Link} from 'react-router-dom';
+// import { Link } from "react-router-dom";
 
 class OverlayNav extends Component {
   render() {
@@ -11,15 +11,16 @@ class OverlayNav extends Component {
     } else {
       activeState = "overlayNav-active";
     }
+
     return (
       <div className={`overlayNav ${activeState}`} id="overlay">
         <ul className="overlayNav-content">
-          <Link to="#">
+          <a href="#home" className="overlayNav-link">
             <li>Home</li>
-          </Link>
-          <Link to="#">
+          </a>
+          <a href="#howitworks" className="overlayNav-link">
             <li>How it Works</li>
-          </Link>
+          </a>
         </ul>
       </div>
     );

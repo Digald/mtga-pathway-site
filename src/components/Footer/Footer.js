@@ -31,11 +31,11 @@ class Footer extends Component {
           </div>
         </div>
         <div className="footer__section">
-          <p className="footer__heading">I hope you enjoy the project!</p>
+          <p className="footer__heading">Enjoy the Project</p>
           <p className="footer__text">
             If you enjoy what I've created please consider supporting my efforts
-            to continue creating tools that people with similar interests make
-            good use of.
+            to continue creating tools that people with similar interests can
+            make good use of.
           </p>
           <a
             href="https://ko-fi.com/T6T110922"

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import PageBody from "./components/PageBody/PageBody";
@@ -9,18 +9,18 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <div className="navContainer">
           <Navbar />
         </div>
         <PageBody />
         <AppPreview />
-        <div className="previewSpacer" />
+        <div className="previewSpacer" id="trythis"/>
         <DescriptionSection />
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
