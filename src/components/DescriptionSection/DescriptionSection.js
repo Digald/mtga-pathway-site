@@ -10,15 +10,15 @@ class DescriptionSection extends Component {
         <SingleSection
           title="Collection"
           text="MTGA Pathway automatically imports all the cards in your collection
-            and keeps updating when you get new cards through packs and events!
+            and stays up to date when you get new cards through packs and events!
             It also keeps up to date with your gold, wildcards, and gems."
           image="cardArr"
         />
         <SingleSection
           title="Competitve Decks"
-          text="MTGA Pathway automatically imports all the cards in your collection
-            and keeps updating when you get new cards through packs and events!
-            It also keeps up to date with your gold, wildcards, and gems."
+          text="Tired of playing the same few decks you only have
+          the exact cards for? Search for current competitve decks that you are
+          closest to building with your current collection, or with wildcards."
           image="decks_icon"
         />
         <SingleSection
