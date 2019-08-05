@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./OverlayNav.css";
-// import { Link } from "react-router-dom";
 
 class OverlayNav extends Component {
   render() {
-    const { active } = this.props;
+    console.log(this.props);
+    const { active, isClicked } = this.props;
     let activeState;
     if (!active) {
       activeState = "overlayNav-inactive";
@@ -15,10 +15,10 @@ class OverlayNav extends Component {
     return (
       <div className={`overlayNav ${activeState}`} id="overlay">
         <ul className="overlayNav-content">
-          <a href="#home" className="overlayNav-link">
+          <a onClick={e => isClicked(e, 'top')} href="#top" className="overlayNav-link">
             <li>Home</li>
           </a>
-          <a href="#howitworks" className="overlayNav-link">
+          <a onClick={e => isClicked(e, 'howitworks')} href="#howitworks" className="overlayNav-link">
             <li>How it Works</li>
           </a>
         </ul>

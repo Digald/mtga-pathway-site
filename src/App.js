@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+// import { HashRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import PageBody from "./components/PageBody/PageBody";
@@ -9,8 +9,8 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <HashRouter>
-      <div className="App">
+    // <HashRouter>
+      <div className="App" id="top">
         <div className="navContainer">
           <Navbar />
         </div>
@@ -20,7 +20,7 @@ function App() {
         <DescriptionSection />
         <Footer />
       </div>
-    </HashRouter>
+    // </HashRouter>
   );
 }
 

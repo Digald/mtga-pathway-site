@@ -18,6 +18,25 @@ class Navbar extends Component {
     });
   };
 
+  linkClickedMobile = (e, whereTo) => {
+    e.preventDefault();
+    this.setState({
+      overlayWidth: !this.state.overlayWidth,
+      menuSVG: !this.state.menuSVG
+    });
+    switch (whereTo) {
+      case "top":
+        document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+        break;
+      case "howitworks":
+        document
+          .getElementById("howitworks")
+          .scrollIntoView({ behavior: "smooth" });
+        break;
+      default:
+        return;
+    }
+  };
   render() {
     const { screenWidth, menuSVG } = this.state;
     console.log(screenWidth);
@@ -34,7 +53,7 @@ class Navbar extends Component {
         </h1>
         {screenWidth > 768 ? (
           <ul className="navbar__links">
-            <a href="#home">
+            <a href="#top">
               <li>Home</li>
             </a>
             <a href="#howitworks">
@@ -49,7 +68,10 @@ class Navbar extends Component {
             alt="Menu"
           />
         )}
-        <OverlayNav active={this.state.overlayWidth} />
+        <OverlayNav
+          active={this.state.overlayWidth}
+          isClicked={this.linkClickedMobile}
+        />
       </div>
     );
   }
