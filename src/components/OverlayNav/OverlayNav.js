@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "./OverlayNav.css";
 
+/**
+ * The menu that toggles at smaller screen sizes. It overlays the entire site when toggled on. 
+ */
+
 class OverlayNav extends Component {
   render() {
-    console.log(this.props);
     const { active, isClicked } = this.props;
     let activeState;
     if (!active) {

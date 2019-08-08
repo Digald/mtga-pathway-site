@@ -5,6 +5,9 @@ import decks_icon from '../../assets/decks_icon.svg';
 import decklist_icon from '../../assets/decklist_icon.svg';
 import DisplayIcon from "../DisplayIcon/DisplayIcon.js";
 
+/**
+ * Component that decides what icon to display based
+ */
 
 class RenderIcons extends Component {
   render() {

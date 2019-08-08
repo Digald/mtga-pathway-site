@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Navbar.css";
 import menu from "./menu.svg";
 import OverlayNav from "../OverlayNav/OverlayNav";
+/**
+ * Everything dealing with the top navigation bar. Renders the overlay nav screen on smaller devices. 
+ */
 
 class Navbar extends Component {
   state = {
@@ -39,7 +42,6 @@ class Navbar extends Component {
   };
   render() {
     const { screenWidth, menuSVG } = this.state;
-    console.log(screenWidth);
     let svgUrl;
     if (!menuSVG) {
       svgUrl = "navbar__hamburger__open";

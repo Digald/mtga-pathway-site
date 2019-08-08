@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./DescriptionSection.css";
 import SingleSection from "../SingleSection/SingleSection";
 
+/**
+ * The portion of the page that contains all the descriptions of what the app does and icons that represent those descriptions.
+ */
+
 class DescriptionSection extends Component {
   render() {
     return (

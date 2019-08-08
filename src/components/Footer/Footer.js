@@ -3,6 +3,10 @@ import "./Footer.css";
 import simpleIcons from "simple-icons";
 import parse from "html-react-parser";
 
+/**
+ * The entire footer of the page which contains contact information and a kofi link just in case.
+ */
+
 class Footer extends Component {
   render() {
     return (

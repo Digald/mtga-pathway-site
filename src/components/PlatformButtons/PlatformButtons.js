@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "./PlatformButtons.css";
-// import windows from './windows-10-white-icon-10.jpg';
 import windows from './windows-badge.png';
+
+/**
+ * The download button that appears right above the app preview. 
+ */
 
 class PlatformButtons extends Component {
   render() {
