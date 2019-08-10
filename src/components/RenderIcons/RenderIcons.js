@@ -6,7 +6,7 @@ import decklist_icon from '../../assets/decklist_icon.svg';
 import DisplayIcon from "../DisplayIcon/DisplayIcon.js";
 
 /**
- * Component that decides what icon to display based
+ * Component that decides what icon to display based on props recieved from SingleSection.js
  */
 
 class RenderIcons extends Component {
