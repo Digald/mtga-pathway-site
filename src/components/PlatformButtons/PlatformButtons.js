@@ -14,7 +14,7 @@ class PlatformButtons extends Component {
     }
     return (
       <div className="platformbuttons">
-          <button><img className="platformbuttons__image" src={windows} alt="Download for Windows"/></button>
+          <a href="https://github.com/Digald/mtga-pathway/releases/download/v0.1.5/mtga-pathway-setup-0.1.5.exe"><button><img className="platformbuttons__image" src={windows} alt="Download for Windows"/></button></a>
       </div>
     );
   }

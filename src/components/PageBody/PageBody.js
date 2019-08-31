@@ -19,7 +19,7 @@ class PageBody extends Component {
           The smart way to make the most out of your card collection
         </h2>
         <p className="pagebody__subheading">*For desktop platforms only</p>
-        {/* <PlatformButtons /> */}
+        <PlatformButtons />
       </div>
     );
   }
