@@ -1,18 +1,44 @@
-import React, { Component } from "react";
-import "./Footer.css";
-import simpleIcons from "simple-icons";
-import parse from "html-react-parser";
+import React, { Component } from "react"
+import simpleIcons from "simple-icons"
+import parse from "html-react-parser"
+import styled from "styled-components"
 
 /**
  * The entire footer of the page which contains contact information and a kofi link just in case.
  */
 
+const FooterWrapper = styled.div`
+  background-color: #1b1b3a;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid #ff3562;
+  svg {
+    width: 50px;
+    fill: white;
+  }
+  svg:first-child {
+    margin-right: 20px;
+  }
+  @media (max-width: 870px) {
+    flex-wrap: wrap;
+  }
+`
+const FooterSection = styled.div`
+  padding: 1%;
+`
+const FooterHeading = styled.p`
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: overline;
+`
+
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
-        <div className="footer__section">
-          <p className="footer__heading">Contact Me</p>
+      <FooterWrapper>
+        <FooterSection>
+          <FooterHeading>Contact Me</FooterHeading>
           <p className="footer__text">
             If you experience problems with the webpage, desktop app, or have
             any concerns or suggestions about MTGA Pathway, contact me.
@@ -33,9 +59,9 @@ class Footer extends Component {
               {parse(simpleIcons.get("linkedin").svg)}
             </a>
           </div>
-        </div>
-        <div className="footer__section">
-          <p className="footer__heading">Enjoy the Project</p>
+        </FooterSection>
+        <FooterSection>
+          <FooterHeading>Enjoy the Project</FooterHeading>
           <p className="footer__text">
             If you enjoy what I've created please consider supporting my efforts
             to continue creating tools that people with similar interests can
@@ -54,10 +80,10 @@ class Footer extends Component {
               alt="Buy Me a Coffee at ko-fi.com"
             />
           </a>
-        </div>
-      </div>
-    );
+        </FooterSection>
+      </FooterWrapper>
+    )
   }
 }
 
-export default Footer;
+export default Footer
