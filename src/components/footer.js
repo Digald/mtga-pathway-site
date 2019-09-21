@@ -32,6 +32,10 @@ const FooterHeading = styled.p`
   letter-spacing: 1px;
   text-decoration: overline;
 `
+const FooterLinks = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 class Footer extends Component {
   render() {
@@ -43,7 +47,7 @@ class Footer extends Component {
             If you experience problems with the webpage, desktop app, or have
             any concerns or suggestions about MTGA Pathway, contact me.
           </p>
-          <div className="footer__links">
+          <FooterLinks>
             <a
               href="https://github.com/Digald"
               target="_blank"
@@ -58,7 +62,7 @@ class Footer extends Component {
             >
               {parse(simpleIcons.get("linkedin").svg)}
             </a>
-          </div>
+          </FooterLinks>
         </FooterSection>
         <FooterSection>
           <FooterHeading>Enjoy the Project</FooterHeading>
@@ -67,6 +71,7 @@ class Footer extends Component {
             to continue creating tools that people with similar interests can
             make good use of.
           </p>
+          <FooterLinks>
           <a
             href="https://ko-fi.com/T6T110922"
             target="_blank"
@@ -80,6 +85,7 @@ class Footer extends Component {
               alt="Buy Me a Coffee at ko-fi.com"
             />
           </a>
+          </FooterLinks>
         </FooterSection>
       </FooterWrapper>
     )

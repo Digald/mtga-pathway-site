@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import OverlayHeader from "./overlayheader"
+import menu from "../images/menu.svg"
+import closeMenu from "../images/close_menu.svg"
 
 /**
  * Everything dealing with the top navigation bar. Renders the overlay nav screen on smaller devices.
@@ -13,17 +16,14 @@ const HeaderWrapper = styled.div`
   background-color: #1b1b3a;
   width: 100%;
   height: 100%;
-  .hamburger {
+  img {
     padding: 5%;
     width: 30px;
     animation: open-to-close 1s ease;
     z-index: 100;
   }
-  .hamburger__open {
-    content: url("./menu.svg");
-  }
-  .hamburger__close {
-    content: url("./close_menu.svg");
+  @media (max-width: 768px) {
+    background-color: white;
   }
 `
 const HeaderName = styled.h1`
@@ -38,6 +38,11 @@ const HeaderName = styled.h1`
   margin: 0;
   span {
     color: #f84aa7;
+  }
+  @media (max-width: 768px) {
+    width: 20%;
+    font-size: 20px;
+    padding: 20px 30px;
   }
 `
 const HeaderLinks = styled.ul`
@@ -92,11 +97,12 @@ class Header extends Component {
   }
   render() {
     const { screenWidth, menuSVG } = this.state
+    console.log(screenWidth)
     let svgUrl
     if (!menuSVG) {
-      svgUrl = "hamburger__open"
+      svgUrl = true
     } else {
-      svgUrl = "hamburger__close"
+      svgUrl = false
     }
     return (
       <HeaderWrapper>
@@ -105,22 +111,21 @@ class Header extends Component {
         </HeaderName>
         {screenWidth > 768 ? (
           <HeaderLinks>
-            <a href="#top">
+            <Link to="/#top">
               <li>Home</li>
-            </a>
-            <a href="#howitworks">
+            </Link>
+            <Link to="/#howitworks">
               <li>How it Works</li>
-            </a>
+            </Link>
           </HeaderLinks>
         ) : (
           <img
-            className={`hamburger ${svgUrl}`}
-            src={menu}
+            src={svgUrl ? menu : closeMenu}
             onClick={e => this.handleClick(e)}
             alt="Menu"
           />
         )}
-        <OverlayNav
+        <OverlayHeader
           active={this.state.overlayWidth}
           isClicked={this.linkClickedMobile}
         />
