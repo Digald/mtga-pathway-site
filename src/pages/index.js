@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PageBody from "../components/pagebody"
+import AppPreview from "../components/appPreview"
 
 const PageWrapper = styled.div`
   display: grid;
@@ -17,6 +19,8 @@ const IndexPage = () => (
   <PageWrapper id="top">
     <Layout>
       <SEO title="MTGA Pathway" />
+      <PageBody />
+      <AppPreview />
     </Layout>
   </PageWrapper>
 )
