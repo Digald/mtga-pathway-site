@@ -13,8 +13,6 @@ const PageBodyWrapper = styled.div`
   align-items: center;
   padding: 0 30%;
   text-align: center;
-  /* background-color: rgb(27, 27, 58, 0.8); */
-  /* border: 2px solid #00ffff; */
   @media (max-width: 1200px) {
     padding: 0 20%;
   }

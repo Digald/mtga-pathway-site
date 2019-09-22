@@ -25,6 +25,14 @@ const FooterWrapper = styled.div`
 `
 const FooterSection = styled.div`
   padding: 1%;
+  p {
+    text-align: center;
+  }
+  .footer__text {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  
 `
 const FooterHeading = styled.p`
   font-weight: bold;

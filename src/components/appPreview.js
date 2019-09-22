@@ -24,9 +24,9 @@ const AppPreviewWrapper = styled.div`
     -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
-    @media (max-width: 796px) {
-      max-width: 100%;
-    }
+    /* @media (max-width: 796px) {
+      width: 100%;
+    } */
   }
 `
 
