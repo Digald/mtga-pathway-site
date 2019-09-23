@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import windows from "../images/windows-badge.png"
 
+
 /**
  * The download button that appears right above the app preview.
  */
@@ -29,7 +30,7 @@ class PlatformButtons extends Component {
     }
     return (
       <div className="platformbuttons">
-        <a href="https://github.com/Digald/mtga-pathway/releases/download/v0.1.5/mtga-pathway-setup-0.1.5.exe">
+        <a href="https://github.com/Digald/mtga-pathway/releases/latest">
           <PlatformButton>
             <PlatformWindows src={windows} alt="Download for Windows" />
           </PlatformButton>
