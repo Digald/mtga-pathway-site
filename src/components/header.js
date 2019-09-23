@@ -8,16 +8,16 @@ import closeMenu from "../images/close_menu.svg"
 /**
  * Everything dealing with the top navigation bar. Renders the overlay nav screen on smaller devices.
  */
-
+// styles
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1b1b3a;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   img {
-    padding: 5%;
+    padding: 4%;
     width: 30px;
     animation: open-to-close 1s ease;
     z-index: 100;
@@ -31,7 +31,10 @@ const HeaderName = styled.h1`
   letter-spacing: 5px;
   font-family: "Fira Sans", sans-serif;
   background-color: white;
-  padding: 22px 50px;
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: #1b1b3a;
   font-weight: bold;
   white-space: nowrap;
@@ -42,11 +45,11 @@ const HeaderName = styled.h1`
   @media (max-width: 768px) {
     width: 20%;
     font-size: 20px;
-    padding: 20px 30px;
+    padding: 0 30px;
   }
 `
 const HeaderLinks = styled.ul`
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -56,11 +59,10 @@ const HeaderLinks = styled.ul`
     color: inherit;
     padding: 10px 20px;
   }
-  li:hover {
+  a:hover {
     color: #f84aa7;
   }
 `
-
 class Header extends Component {
   state = {
     screenWidth: window.screen.width,
@@ -82,18 +84,7 @@ class Header extends Component {
       overlayWidth: !this.state.overlayWidth,
       menuSVG: !this.state.menuSVG,
     })
-    switch (whereTo) {
-      case "top":
-        document.getElementById("top").scrollIntoView({ behavior: "smooth" })
-        break
-      case "howitworks":
-        document
-          .getElementById("howitworks")
-          .scrollIntoView({ behavior: "smooth" })
-        break
-      default:
-        return
-    }
+    return;
   }
   render() {
     const { screenWidth, menuSVG } = this.state
@@ -116,6 +107,9 @@ class Header extends Component {
             </Link>
             <Link to="/#howitworks">
               <li>How it Works</li>
+            </Link>
+            <Link to="/getstarted">
+              <li>Get Started</li>
             </Link>
           </HeaderLinks>
         ) : (

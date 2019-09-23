@@ -25,7 +25,7 @@ const PageSpacer = styled.div`
 const IndexPage = () => (
   <PageWrapper id="top">
     <Layout>
-      <SEO title="MTGA Pathway" />
+      <SEO title="Download" />
       <PageBody />
       <AppPreview />
       <PageSpacer id="trythis" />

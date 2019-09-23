@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link, navigate } from "gatsby"
 import styled from "styled-components"
 
 /**
@@ -12,8 +13,8 @@ const Overlay = styled.div`
   background-color: rgb(27, 27, 58);
   overflow-x: hidden;
   transition: 0.5s;
-  height: ${props => props.activeStatus ? 100 : 0}%;
-  z-index: ${props => props.activeStatus ? 2 : 1};
+  height: ${props => (props.activeStatus ? 100 : 0)}%;
+  z-index: ${props => (props.activeStatus ? 2 : 1)};
 `
 
 const OverlayContent = styled.ul`
@@ -39,34 +40,34 @@ const OverlayContent = styled.ul`
 `
 
 class OverlayHeader extends Component {
+  handleRoute = (e, toLocation) => {
+    e.preventDefault()
+    navigate(`${toLocation}`, { replace: true })
+    this.props.isClicked(e)
+  }
+
   render() {
-    const { active, isClicked } = this.props
+    const { active } = this.props
     let activeState
     if (!active) {
       activeState = false
     } else {
       activeState = true
     }
-
     return (
-        <Overlay activeStatus={activeState} id="overlay">
-          <OverlayContent>
-            <a
-              onClick={e => isClicked(e, "top")}
-              href="#top"
-              className="overlayNav-link"
-            >
-              <li>Home</li>
-            </a>
-            <a
-              onClick={e => isClicked(e, "howitworks")}
-              href="#howitworks"
-              className="overlayNav-link"
-            >
-              <li>How it Works</li>
-            </a>
-          </OverlayContent>
-        </Overlay>
+      <Overlay activeStatus={activeState} id="overlay">
+        <OverlayContent>
+          <Link to="/" onClick={e => this.handleRoute(e, "/#top")}>
+            <li>Home</li>
+          </Link>
+          <Link to="/" onClick={e => this.handleRoute(e, "/#howitworks")}>
+            <li>How it Works</li>
+          </Link>
+          <Link to="/" onClick={e => this.handleRoute(e, "/getstarted")}>
+            <li>Get Started</li>
+          </Link>
+        </OverlayContent>
+      </Overlay>
     )
   }
 }
