@@ -8,7 +8,7 @@ import backgroundAnimation from "../images/backgroundAnimation.mp4"
  */
 
 const PageBodyWrapper = styled.div`
-  background-color: rgba(27, 27, 58, 0.8);
+  background-color: rgba(27, 27, 58, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;

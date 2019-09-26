@@ -7,7 +7,7 @@ import Image from "../components/image"
  */
 
 const AppPreviewWrapper = styled.div`
-  background-color: rgba(27, 27, 58, 0.8);
+  background-color: rgba(27, 27, 58, 0.7);
   width: 100%;
   grid-column: 1;
   grid-row: 2 / 4;

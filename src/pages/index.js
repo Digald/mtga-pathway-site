@@ -7,6 +7,7 @@ import AppPreview from "../components/appPreview"
 import DescriptionSection from "../components/descriptionSection"
 
 const PageWrapper = styled.div`
+  background-color: rgba(27, 27, 58, 0.1);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
