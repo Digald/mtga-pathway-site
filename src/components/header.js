@@ -65,11 +65,15 @@ const HeaderLinks = styled.ul`
 `
 class Header extends Component {
   state = {
-    screenWidth: window.screen.width,
+    screenWidth: '',
     overlayWidth: false,
     menuSVG: false,
   }
-
+  componentDidMount() {
+    this.setState({
+      screenWidth: window.screen.width
+    });
+  }
   handleClick = e => {
     e.preventDefault()
     this.setState({
