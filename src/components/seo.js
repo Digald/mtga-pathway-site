@@ -46,11 +46,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: 'og:image',
-          content: logo
+          content: 'https://i.gyazo.com/93cb4b76e84d191a9802396753f8d6b7.jpg'
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: 'https://pensive-davinci-f72ee6.netlify.com',
         },
         {
           property: `og:type`,
