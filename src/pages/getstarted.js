@@ -11,7 +11,7 @@ const GetStartedContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2 {
+  h1 {
     color: #f84aa7;
     font-size: 50px;
     @media (max-width: 500px) {
@@ -36,7 +36,7 @@ const GetStarted = () => (
     <Layout>
       <SEO title="Getting Started" />
       <GetStartedContent>
-        <h2>Getting Started</h2>
+        <h1>Getting Started</h1>
         <ul>
           <li>
             <span>
@@ -53,10 +53,10 @@ const GetStarted = () => (
           </li>
           <li>
             Launch the .exe installer. Be sure to trust the file as long as you
-            download from my Github repository only.
+            download from my <a href="https://github.com/Digald/mtga-pathway">Github</a> repository only.
           </li>
           <li>
-            Depending on your local Windows enviornment,anti-virus, or filewall,
+            Depending on your local Windows enviornment, antivirus, or filewall,
             you may be prevented from installing the application. Give MTGA
             Pathway any permissions it may need to run.
           </li>
@@ -71,7 +71,21 @@ const GetStarted = () => (
             manually.
           </li>
         </ul>
-        <h2>Troubleshooting</h2>
+        <h1>Troubleshooting</h1>
+        <ul>
+          <li>
+            If you notice the application is not updating new cards or is being inconsistent with your collection in Magic Arena, you can delete the <span>Settings.txt</span> file from your <span>\AppData\Roaming\MTGA Pathway\</span> folder.
+          </li>
+          <li>
+            Double check that your antivirus or firewall is not preventing you from running the application. Add an exception if needed.
+          </li>
+          <li>
+            When in doubt: uninstall MTGA Pathway, restart your computer, redownload the application, and follow the Getting Started instructions again.
+          </li>
+          <li>
+            Contact me if problems persist.
+          </li>
+        </ul>
       </GetStartedContent>
     </Layout>
   </GetStartedWrapper>

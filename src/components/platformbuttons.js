@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { navigate } from "gatsby"
 import styled from "styled-components"
 import windows from "../images/windows-badge.png"
 
@@ -21,6 +22,11 @@ const PlatformMobileView = styled.div`
 `
 
 class PlatformButtons extends Component {
+  handleClick = (e) => {
+    e.preventDefault();
+    navigate('/getstarted', {replace: true});
+    window.open('https://github.com/Digald/mtga-pathway/releases/latest', '_blank')
+  }
   render() {
     const isMobile = navigator.userAgent.match(
       /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
@@ -30,11 +36,9 @@ class PlatformButtons extends Component {
     }
     return (
       <div className="platformbuttons">
-        <a href="https://github.com/Digald/mtga-pathway/releases/latest">
-          <PlatformButton>
+          <PlatformButton onClick={(e) => this.handleClick(e)}>
             <PlatformWindows src={windows} alt="Download for Windows" />
           </PlatformButton>
-        </a>
       </div>
     )
   }
