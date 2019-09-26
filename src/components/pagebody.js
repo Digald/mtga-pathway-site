@@ -8,6 +8,7 @@ import backgroundAnimation from "../images/backgroundAnimation.mp4"
  */
 
 const PageBodyWrapper = styled.div`
+  background-color: rgba(27, 27, 58, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +51,6 @@ class PageBody extends Component {
       <PageBodyWrapper id="home">
         <video autoPlay muted loop>
           <source src={backgroundAnimation} type="video/mp4" />
-          Your browser does not support HTML5 video
         </video>
         <PageBodyHeading>
           The smart way to make the most out of your card collection

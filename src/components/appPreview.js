@@ -7,10 +7,10 @@ import Image from "../components/image"
  */
 
 const AppPreviewWrapper = styled.div`
+  background-color: rgba(27, 27, 58, 0.8);
   width: 100%;
   grid-column: 1;
   grid-row: 2 / 4;
-  z-index: 1;
   flex-flow: 1;
   display: flex;
   justify-content: center;
@@ -21,12 +21,10 @@ const AppPreviewWrapper = styled.div`
     }
   }
   img {
+    z-index: 2; 
     -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
-    /* @media (max-width: 796px) {
-      width: 100%;
-    } */
   }
 `
 

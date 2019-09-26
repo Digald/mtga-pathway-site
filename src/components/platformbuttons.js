@@ -16,10 +16,6 @@ const PlatformWindows = styled.img`
   width: 200px;
 `
 
-const PlatformMobileView = styled.div`
-  margin: 5% 0;
-`
-
 class PlatformButtons extends Component {
   handleClick = e => {
     e.preventDefault()
