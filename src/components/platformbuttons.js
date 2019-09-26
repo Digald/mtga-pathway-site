@@ -3,7 +3,6 @@ import { navigate } from "gatsby"
 import styled from "styled-components"
 import windows from "../images/windows-badge.png"
 
-
 /**
  * The download button that appears right above the app preview.
  */
@@ -22,23 +21,20 @@ const PlatformMobileView = styled.div`
 `
 
 class PlatformButtons extends Component {
-  handleClick = (e) => {
-    e.preventDefault();
-    navigate('/getstarted', {replace: true});
-    window.open('https://github.com/Digald/mtga-pathway/releases/latest', '_blank')
+  handleClick = e => {
+    e.preventDefault()
+    navigate("/getstarted", { replace: true })
+    window.open(
+      "https://github.com/Digald/mtga-pathway/releases/latest",
+      "_blank"
+    )
   }
   render() {
-    const isMobile = navigator.userAgent.match(
-      /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-    )
-    if (isMobile) {
-      return <PlatformMobileView></PlatformMobileView>
-    }
     return (
       <div className="platformbuttons">
-          <PlatformButton onClick={(e) => this.handleClick(e)}>
-            <PlatformWindows src={windows} alt="Download for Windows" />
-          </PlatformButton>
+        <PlatformButton onClick={e => this.handleClick(e)}>
+          <PlatformWindows src={windows} alt="Download for Windows" />
+        </PlatformButton>
       </div>
     )
   }
