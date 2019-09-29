@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import simpleIcons from "simple-icons"
 import parse from "html-react-parser"
 import styled from "styled-components"
+import kofi from '../images/kofi.png'
 
 /**
  * The entire footer of the page which contains contact information and a kofi link just in case.
@@ -88,7 +89,7 @@ class Footer extends Component {
             <img
               height="36"
               style={{ border: "0px", height: "36px" }}
-              src="https://az743702.vo.msecnd.net/cdn/kofi1.png?v=2"
+              src={kofi}
               border="0"
               alt="Buy Me a Coffee at ko-fi.com"
             />
