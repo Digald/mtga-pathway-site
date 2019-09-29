@@ -65,7 +65,7 @@ const HeaderLinks = styled.ul`
 `
 class Header extends Component {
   state = {
-    screenWidth: '',
+    screenWidth: 1000,
     overlayWidth: false,
     menuSVG: false,
   }
@@ -92,7 +92,6 @@ class Header extends Component {
   }
   render() {
     const { screenWidth, menuSVG } = this.state
-    console.log(screenWidth)
     let svgUrl
     if (!menuSVG) {
       svgUrl = true
