@@ -47,14 +47,17 @@ const GetStarted = () => (
             Detailed Logs
           </li>
           <li>
-            You will be taken to Github so you can download the{" "}
-            <span>LATEST</span> and <span>TRUSTED</span> version of the application. NOTE:
-            The source code is also available for inspection.
+            You will be taken to{" "}
+            <a href="https://github.com/Digald/mtga-pathway/releases">Github</a>{" "}
+            so you can download the <span>LATEST</span> and <span>TRUSTED</span>{" "}
+            version of the application. NOTE: The source code is also available
+            for inspection.
           </li>
           <li>
-            Launch the .exe installer. Be sure to trust the file as long as you
-            download from my <a href="https://github.com/Digald/mtga-pathway">Github</a> repository only.
+            MD5:73D59F055A8905B196378A020492F249 /
+            SHA-1:E57132CECFB07EB38292506DF8A1AA84FE0158CF
           </li>
+          <li>Launch the .exe installer.</li>
           <li>
             Depending on your local Windows enviornment, antivirus, or filewall,
             you may be prevented from installing the application. Give MTGA
@@ -74,17 +77,33 @@ const GetStarted = () => (
         <h1>Troubleshooting</h1>
         <ul>
           <li>
-            If you notice the application is not updating new cards or is being inconsistent with your collection in Magic Arena, you can delete the <span>Settings.txt</span> file from your <span>\AppData\Roaming\MTGA Pathway\</span> folder.
+            If you notice the application is not updating new cards or is being
+            inconsistent with your collection in Magic Arena, you can delete the{" "}
+            <span>Settings.txt</span> file from your{" "}
+            <span>\AppData\Roaming\MTGA Pathway\</span> folder.
           </li>
           <li>
-            Double check that your antivirus or firewall is not preventing you from running the application. Add an exception if needed.
+            If you are having problems with decks not showing up on the page,
+            you can open the developer tools and clear the local storage. Click
+            on{" "}
+            <span>
+              View > Toggle Developer Tools > click the application tab > drop
+              down Local Storage > click the url that appears > hit the clear
+              all icon that appears above the Key/Value pairs, or delete them
+              individually
+            </span>
+            .
           </li>
           <li>
-            When in doubt: uninstall MTGA Pathway, restart your computer, redownload the application, and follow the Getting Started instructions again.
+            Double check that your antivirus or firewall is not preventing you
+            from running the application. Add an exception if needed.
           </li>
           <li>
-            Contact me if problems persist.
+            When in doubt: uninstall MTGA Pathway, restart your computer,
+            redownload the application, and follow the Getting Started
+            instructions again.
           </li>
+          <li>Contact me if problems persist.</li>
         </ul>
       </GetStartedContent>
     </Layout>
